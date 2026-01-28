@@ -1,0 +1,28 @@
+type Shipment {
+    id: ID!
+    shipperName: String
+    carrierName: String
+    pickupLocation: String
+    deliveryLocation: String
+    trackingNumber: String
+    status: String
+    rate: Float
+    createdAt: String
+}
+
+input ShipmentFilter {
+    shipperName: String
+    status: String
+}
+
+type Query {
+    shipments(filter: ShipmentFilter, page: Int, size: Int, sortBy: String, sortOrder: String): [Shipment]
+    shipment(id: ID!): Shipment
+}
+
+type Mutation {
+    addShipment(shipperName: String, carrierName: String, pickupLocation: String, deliveryLocation: String,
+                trackingNumber: String, status: String, rate: Float): Shipment
+    updateShipment(id: ID!, status: String, rate: Float): Shipment
+    login(role: String!): String
+}
