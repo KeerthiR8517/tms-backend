@@ -11,7 +11,7 @@ This is due to hosting limitations and is expected behavior.
 
 - **Pagination:** Pagination in the shipments list starts after 6 entries. 
   Additional entries will appear on the next page.
-
+ 
 # Screen Shots
 
 <img width="1919" height="938" alt="image" src="https://github.com/user-attachments/assets/7d122d5e-d099-48ea-a6d5-f5224b815dbc" />
